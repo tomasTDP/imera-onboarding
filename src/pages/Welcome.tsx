@@ -12,10 +12,10 @@ export default function Welcome() {
         rightBg="bg-midnight-black"
         centered
         left={
-          <div className="space-y-6">
+          <div className="space-y-8">
             <BackButton to="/onboarding/invite" />
 
-            <div className="flex flex-col items-center text-center space-y-6">
+            <div className="flex flex-col items-center text-center space-y-8">
               <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-echo-yellow/20">
                 <PartyPopper className="h-10 w-10 text-burnt-papaya" />
               </div>

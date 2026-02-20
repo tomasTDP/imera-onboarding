@@ -19,17 +19,15 @@ export default function OnboardingInfo() {
             <Logo className="mt-4" />
             <DotStepper total={3} current={1} className="mt-4" />
 
-            <div className="mt-8 space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight text-midnight-black">
-                About you &amp; your company
-              </h1>
-              <p className="text-[15px] text-wisdom-grey">
-                We'll personalize your experience.
-              </p>
-            </div>
+            <h1 className="mt-10 text-3xl font-bold tracking-tight text-midnight-black">
+              About you &amp; your company
+            </h1>
+            <p className="mt-3 text-[15px] text-wisdom-grey">
+              We'll personalize your experience.
+            </p>
 
-            <div className="mt-8 space-y-4">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="mt-10 space-y-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First Name</Label>
                   <Input

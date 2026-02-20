@@ -55,17 +55,15 @@ export default function OnboardingPlan() {
             <Logo className="mt-4" />
             <DotStepper total={3} current={2} className="mt-4" />
 
-            <div className="mt-8 space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight text-midnight-black">
-                Your team &amp; plan
-              </h1>
-              <p className="text-[15px] text-wisdom-grey">
-                Select your team size and we'll recommend the best plan.
-              </p>
-            </div>
+            <h1 className="mt-10 text-3xl font-bold tracking-tight text-midnight-black">
+              Your team &amp; plan
+            </h1>
+            <p className="mt-3 text-[15px] text-wisdom-grey">
+              Select your team size and we'll recommend the best plan.
+            </p>
 
             {/* Team size chips */}
-            <div className="mt-8 space-y-3">
+            <div className="mt-10 space-y-3">
               <p className="text-xs font-semibold uppercase tracking-wider text-wisdom-grey">
                 Team Size
               </p>

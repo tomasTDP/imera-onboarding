@@ -4,7 +4,6 @@ import { Eye, EyeOff } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
 import SplitLayout from '@/components/SplitLayout'
 import Logo from '@/components/Logo'
 import BackButton from '@/components/BackButton'
@@ -23,26 +22,24 @@ export default function Signup() {
             <BackButton to="/" />
             <Logo className="mt-4" />
 
-            <div className="mt-8 space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight text-midnight-black">
-                Get started with Imera
-              </h1>
-              <p className="text-[15px] text-wisdom-grey">
-                Create your account to manage your workforce.
-              </p>
-            </div>
+            <h1 className="mt-10 text-3xl font-bold tracking-tight text-midnight-black">
+              Get started with Imera
+            </h1>
+            <p className="mt-3 text-[15px] text-wisdom-grey">
+              Create your account to manage your workforce.
+            </p>
 
-            <div className="mt-8">
+            <div className="mt-10">
               <SocialAuthButtons navigateTo="/onboarding" />
             </div>
 
-            <div className="mt-6 flex items-center gap-4">
-              <Separator className="flex-1" />
-              <span className="text-sm text-wisdom-grey">or</span>
-              <Separator className="flex-1" />
+            <div className="mt-8 flex items-center gap-4">
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
+              <span className="text-xs text-wisdom-grey">or</span>
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
             </div>
 
-            <div className="mt-6 space-y-4">
+            <div className="mt-8 space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="email">Work email</Label>
                 <Input

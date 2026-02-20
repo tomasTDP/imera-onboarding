@@ -4,7 +4,6 @@ import { Eye, EyeOff } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
 import SinglePageLayout from '@/components/SinglePageLayout'
 import SocialAuthButtons from '@/components/SocialAuthButtons'
 import PageTransition from '@/components/PageTransition'
@@ -16,26 +15,24 @@ export default function SpSignup() {
     <PageTransition>
       <SinglePageLayout backTo="/">
         <div>
-          <div className="space-y-2">
-            <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
-              Get started with Imera
-            </h1>
-            <p className="text-sm text-wisdom-grey">
-              Create your account to manage your workforce.
-            </p>
-          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
+            Get started with Imera
+          </h1>
+          <p className="mt-3 text-sm text-wisdom-grey">
+            Create your account to manage your workforce.
+          </p>
 
-          <div className="mt-7">
+          <div className="mt-10">
             <SocialAuthButtons navigateTo="/sp/employer/setup" />
           </div>
 
-          <div className="mt-5 flex items-center gap-4">
-            <Separator className="flex-1" />
-            <span className="text-sm text-wisdom-grey">or</span>
-            <Separator className="flex-1" />
+          <div className="mt-8 flex items-center gap-4">
+            <div className="h-[0.5px] flex-1 bg-grey-200" />
+            <span className="text-xs text-wisdom-grey">or</span>
+            <div className="h-[0.5px] flex-1 bg-grey-200" />
           </div>
 
-          <div className="mt-5 space-y-4">
+          <div className="mt-8 space-y-6">
             <div className="space-y-2">
               <Label htmlFor="email">Work email</Label>
               <Input
@@ -67,12 +64,12 @@ export default function SpSignup() {
 
           <Button
             asChild
-            className="mt-7 h-12 w-full rounded-[10px] text-[15px] font-semibold"
+            className="mt-8 h-12 w-full rounded-[10px] text-[15px] font-semibold"
           >
             <Link to="/sp/employer/verify">Create Account</Link>
           </Button>
 
-          <p className="mt-5 text-center text-sm text-wisdom-grey">
+          <p className="mt-6 text-center text-sm text-wisdom-grey">
             Already have an account?{' '}
             <Link to="/login" className="font-medium text-burnt-papaya hover:underline">
               Log in

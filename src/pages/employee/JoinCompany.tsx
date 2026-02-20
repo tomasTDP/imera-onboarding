@@ -4,7 +4,6 @@ import { Eye, EyeOff, Building2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
 import SplitLayout from '@/components/SplitLayout'
 import Logo from '@/components/Logo'
 import BackButton from '@/components/BackButton'
@@ -35,27 +34,25 @@ export default function JoinCompany() {
               </div>
             </div>
 
-            <div className="mt-6 space-y-2">
-              <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
-                Join Acme Healthcare
-              </h1>
-              <p className="text-sm text-wisdom-grey">
-                Create your account to get started.
-              </p>
-            </div>
+            <h1 className="mt-8 text-2xl font-bold tracking-tight text-midnight-black">
+              Join Acme Healthcare
+            </h1>
+            <p className="mt-3 text-sm text-wisdom-grey">
+              Create your account to get started.
+            </p>
 
-            <div className="mt-8">
+            <div className="mt-10">
               <SocialAuthButtons navigateTo="/employee/linked" />
             </div>
 
-            <div className="mt-6 flex items-center gap-4">
-              <Separator className="flex-1" />
-              <span className="text-sm text-wisdom-grey">or</span>
-              <Separator className="flex-1" />
+            <div className="mt-8 flex items-center gap-4">
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
+              <span className="text-xs text-wisdom-grey">or</span>
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
             </div>
 
-            <div className="mt-6 space-y-4">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="mt-8 space-y-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First Name</Label>
                   <Input

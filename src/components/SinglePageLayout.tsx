@@ -26,7 +26,7 @@ export default function SinglePageLayout({
       {/* Centered card */}
       <div className="flex justify-center px-4 pb-16 pt-4">
         <div
-          className={`w-full rounded-2xl border border-grey-200 bg-white p-6 shadow-sm sm:p-10 ${
+          className={`w-full rounded-2xl border border-grey-200 bg-white p-6 shadow-sm sm:px-14 sm:py-12 ${
             wide ? 'max-w-[640px]' : 'max-w-[560px]'
           }`}
         >

@@ -12,17 +12,15 @@ export default function SpPayment() {
     <PageTransition>
       <SinglePageLayout backTo="/sp/employer/setup">
         <div>
-          <div className="space-y-2">
-            <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
-              Payment details
-            </h1>
-            <p className="text-sm text-wisdom-grey">
-              You won't be charged until your trial ends.
-            </p>
-          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
+            Payment details
+          </h1>
+          <p className="mt-3 text-sm text-wisdom-grey">
+            You won't be charged until your trial ends.
+          </p>
 
           {/* Order summary */}
-          <div className="mt-7 rounded-xl bg-grey-100 p-4 space-y-2">
+          <div className="mt-10 rounded-xl bg-grey-100 p-4 space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-midnight-black">Growth Plan</span>
               <span className="text-sm font-semibold text-midnight-black">Per seat/mo</span>
@@ -38,7 +36,7 @@ export default function SpPayment() {
             </div>
           </div>
 
-          <div className="mt-7 space-y-4">
+          <div className="mt-8 space-y-6">
             <div className="space-y-2">
               <Label htmlFor="cardNumber">Card Number</Label>
               <div className="relative">
@@ -51,7 +49,7 @@ export default function SpPayment() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="expiry">Expiry</Label>
                 <Input id="expiry" placeholder="MM/YY" className="h-12 rounded-lg text-sm" />
@@ -74,7 +72,7 @@ export default function SpPayment() {
 
           <Button
             asChild
-            className="mt-7 h-12 w-full rounded-[10px] text-[15px] font-semibold"
+            className="mt-8 h-12 w-full rounded-[10px] text-[15px] font-semibold"
           >
             <Link to="/sp/employer/invite">Start Plan</Link>
           </Button>

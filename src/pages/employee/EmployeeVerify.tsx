@@ -12,10 +12,10 @@ export default function EmployeeVerify() {
         rightBg="bg-midnight-black"
         centered
         left={
-          <div className="space-y-6">
+          <div className="space-y-8">
             <BackButton to="/employee" />
 
-            <div className="flex flex-col items-center text-center space-y-6">
+            <div className="flex flex-col items-center text-center space-y-8">
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-burnt-papaya/10">
                 <Mail className="h-8 w-8 text-burnt-papaya" />
               </div>

@@ -21,16 +21,14 @@ export default function Login() {
             <BackButton to="/" />
             <Logo className="mt-4" />
 
-            <div className="mt-8 space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight text-midnight-black">
-                Welcome back
-              </h1>
-              <p className="text-[15px] text-wisdom-grey">
-                Log in to your Imera account.
-              </p>
-            </div>
+            <h1 className="mt-10 text-3xl font-bold tracking-tight text-midnight-black">
+              Welcome back
+            </h1>
+            <p className="mt-3 text-[15px] text-wisdom-grey">
+              Log in to your Imera account.
+            </p>
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-10 space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="email">Work email</Label>
                 <Input

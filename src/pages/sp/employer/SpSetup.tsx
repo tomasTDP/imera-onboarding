@@ -48,17 +48,15 @@ export default function SpSetup() {
     <PageTransition>
       <SinglePageLayout backTo="/sp/employer" wide>
         <div>
-          <div className="space-y-2">
-            <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
-              Set up your workspace
-            </h1>
-            <p className="text-sm text-wisdom-grey">
-              Tell us about you and your company. This takes about 2 minutes.
-            </p>
-          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-midnight-black">
+            Set up your workspace
+          </h1>
+          <p className="mt-3 text-sm text-wisdom-grey">
+            Tell us about you and your company. This takes about 2 minutes.
+          </p>
 
           {/* About you */}
-          <div className="mt-7 space-y-4">
+          <div className="mt-10 space-y-4">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-wisdom-grey">
               About you
             </h2>
@@ -75,7 +73,7 @@ export default function SpSetup() {
           </div>
 
           {/* Company */}
-          <div className="mt-7 space-y-4">
+          <div className="mt-8 space-y-4">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-wisdom-grey">
               Company
             </h2>
@@ -100,7 +98,7 @@ export default function SpSetup() {
           </div>
 
           {/* Team size */}
-          <div className="mt-7 space-y-3">
+          <div className="mt-8 space-y-3">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-wisdom-grey">
               Team Size
             </h2>
@@ -129,7 +127,7 @@ export default function SpSetup() {
           </div>
 
           {/* Plan */}
-          <div className="mt-7 space-y-3">
+          <div className="mt-8 space-y-3">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-wisdom-grey">
               Recommended for you
             </h2>
@@ -201,7 +199,7 @@ export default function SpSetup() {
           {!isEnterprise && (
             <Button
               asChild
-              className="mt-7 h-12 w-full rounded-[10px] text-[15px] font-semibold"
+              className="mt-8 h-12 w-full rounded-[10px] text-[15px] font-semibold"
             >
               <Link to={plan!.isPaid ? '/sp/employer/payment' : '/sp/employer/invite'}>
                 Create Workspace

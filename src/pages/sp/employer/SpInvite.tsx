@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Users, X, Copy, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Separator } from '@/components/ui/separator'
 import SinglePageLayout from '@/components/SinglePageLayout'
 import PageTransition from '@/components/PageTransition'
 
@@ -47,7 +46,7 @@ export default function SpInvite() {
             </p>
           </div>
 
-          <div className="mt-7 flex gap-2">
+          <div className="mt-10 flex gap-2">
             <Input
               type="email"
               placeholder="colleague@company.com"
@@ -83,13 +82,13 @@ export default function SpInvite() {
             </div>
           )}
 
-          <div className="mt-5 flex items-center gap-4">
-            <Separator className="flex-1" />
-            <span className="text-sm text-wisdom-grey">or</span>
-            <Separator className="flex-1" />
+          <div className="mt-8 flex items-center gap-4">
+            <div className="h-[0.5px] flex-1 bg-grey-200" />
+            <span className="text-xs text-wisdom-grey">or</span>
+            <div className="h-[0.5px] flex-1 bg-grey-200" />
           </div>
 
-          <div className="mt-5 space-y-2">
+          <div className="mt-8 space-y-2">
             <p className="text-sm font-medium text-midnight-black">Share invite link</p>
             <div className="flex gap-2">
               <Input
@@ -113,7 +112,7 @@ export default function SpInvite() {
 
           <Button
             asChild
-            className="mt-7 h-12 w-full rounded-[10px] text-[15px] font-semibold"
+            className="mt-8 h-12 w-full rounded-[10px] text-[15px] font-semibold"
           >
             <Link to="/sp/employer/welcome">Continue</Link>
           </Button>

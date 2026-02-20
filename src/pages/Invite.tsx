@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Users, X, Copy, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Separator } from '@/components/ui/separator'
 import SplitLayout from '@/components/SplitLayout'
 import Logo from '@/components/Logo'
 import BackButton from '@/components/BackButton'
@@ -42,7 +41,7 @@ export default function Invite() {
             <BackButton />
             <Logo className="mt-4" />
 
-            <div className="mt-8 flex flex-col items-center text-center space-y-3">
+            <div className="mt-10 flex flex-col items-center text-center space-y-4">
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-burnt-papaya/10">
                 <Users className="h-8 w-8 text-burnt-papaya" />
               </div>
@@ -93,14 +92,14 @@ export default function Invite() {
             )}
 
             {/* Divider */}
-            <div className="mt-6 flex items-center gap-4">
-              <Separator className="flex-1" />
-              <span className="text-sm text-wisdom-grey">or</span>
-              <Separator className="flex-1" />
+            <div className="mt-8 flex items-center gap-4">
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
+              <span className="text-xs text-wisdom-grey">or</span>
+              <div className="h-[0.5px] flex-1 bg-grey-200" />
             </div>
 
             {/* Share invite link */}
-            <div className="mt-6 space-y-2">
+            <div className="mt-8 space-y-2">
               <p className="text-sm font-medium text-midnight-black">
                 Share invite link
               </p>
