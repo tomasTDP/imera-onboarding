@@ -16,7 +16,7 @@ export default function SpPayment() {
             Payment details
           </h1>
           <p className="mt-3 text-sm text-wisdom-grey">
-            You won't be charged until your trial ends.
+            Enter your payment details to get started.
           </p>
 
           {/* Order summary */}

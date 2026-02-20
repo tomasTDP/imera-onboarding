@@ -22,7 +22,7 @@ export default function DotStepper({
   const total = labels.length
 
   return (
-    <div className={`w-full max-w-[320px] ${className}`}>
+    <div className={`w-full ${className}`}>
       {/* Bar segments */}
       <div className="flex items-center gap-1">
         {Array.from({ length: total }, (_, i) => {

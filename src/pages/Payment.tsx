@@ -24,7 +24,7 @@ export default function Payment() {
               Payment details
             </h1>
             <p className="mt-3 text-[15px] text-wisdom-grey">
-              You won't be charged until your trial ends.
+              Enter your payment details to get started.
             </p>
 
             <div className="mt-10 space-y-6">

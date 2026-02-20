@@ -36,7 +36,7 @@ const plans = [
       'API access',
     ],
     highlight: true,
-    cta: 'Start Free Trial',
+    cta: 'Get Started',
   },
   {
     name: 'Enterprise',
